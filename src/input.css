@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+/* Custom Styles Moved from index.html */
+:root {
+    --primary: #B76E79;
+    --secondary: #D4A59A;
+    --accent: #E8C07D;
+    --dark: #3A3335;
+    --light: #F9F5F0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.hero {
+    background: linear-gradient(rgba(58, 51, 53, 0.7), rgba(58, 51, 53, 0.7)), 
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.practice-area-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #9c5d66;
+    transform: translateY(-2px);
+}
+
+.testimonial-card {
+    background-color: rgba(183, 110, 121, 0.1);
+    border-left: 4px solid var(--primary);
+} 
